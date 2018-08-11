@@ -1,0 +1,63 @@
+.major {
+  padding: 30px 13px 30px 40px;
+
+  .major-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .major-cards-container {
+    width: 630px;
+    height: 331px;
+    background: url("../assets/bg@2x.png") no-repeat;
+    .contain-img();
+
+    .major-cards-info {
+      padding: 25px;
+
+      .major-cards-info-title {
+        font-size: 27px;
+        font-weight: bold;
+      }
+
+      .major-cards-info-description {
+        margin: 6px 0 25px;
+        font-size: 14px;
+      }
+
+      .major-cards-info-weather {
+        display: flex;
+
+        .weather-home,
+        .weather-street {
+          .weather-title {
+            margin-bottom: 4px;
+            font-size: 14px;
+            color: @grey;
+          }
+
+          .weather-number {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 0;
+            text-align: left;
+          }
+        }
+
+        .weather-home {
+          margin-right: 18px;
+        }
+
+        .weather-icon {
+          width: 26px;
+          height: 26px;
+          margin-top: 27px;
+          margin-left: 5px;
+          background: url("../assets/cloud-drizzle.svg") no-repeat;
+          .contain-img();
+        }
+      }
+    }
+  }
+}
