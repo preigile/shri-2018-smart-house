@@ -1,3 +1,6 @@
+import Card from "./MajorCard";
+import cardInfo from "../starage/majorCards";
+
 export default () => {
     return `<div class="major">
                 <div class="major-title">Главное</div>
@@ -16,6 +19,9 @@ export default () => {
                             </div>
                             <div class="weather-icon"></div>
                         </div>
+                    </div>
+                    <div class="major-cards">
+                        ${cardInfo().map(Card).join('')}
                     </div>
                 </div>
             </div>`
