@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Main from "./Main";
+import Main from "./Major";
 import Scenarios from "./Scenarios";
 import Devices from "./Devices";
 import Footer from "./Footer";

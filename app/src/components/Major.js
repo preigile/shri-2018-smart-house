@@ -1,9 +1,9 @@
-import Card from "./MajorCard";
+import Card from "./Card";
 import cardInfo from "../starage/majorCards";
 
 export default () => {
     return `<div class="major">
-                <div class="major-title">Главное</div>
+                <div class="major-title title">Главное</div>
                 <div class="major-cards-container">
                     <div class="major-cards-info">
                         <div class="major-cards-info-title">Привет, Геннадий!</div>
