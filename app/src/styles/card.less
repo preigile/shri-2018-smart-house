@@ -1,0 +1,31 @@
+.card {
+  width: 172px;
+  height: 72px;
+  padding: 14px;
+  border-radius: 20px;
+  background: @grey-light;
+  cursor: pointer;
+  &:hover {
+    border-radius: 20px;
+    background: @white;
+    box-shadow: 0 2px 6px 0 rgba(197, 186, 186, .5);
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .card-description {
+    font-size: 12px;
+    color: @grey;
+    text-align: left;
+  }
+
+  .card-icon {
+    width: 24px;
+    height: 24px;
+    .contain-img();
+  }
+}
