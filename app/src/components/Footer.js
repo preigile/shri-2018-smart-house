@@ -1,10 +1,11 @@
 export default () => {
     return `<div class="footer">
-                <nav class="footer-nav">
-                    <a class="footer-nav-item" href="#" target="_self">Помощь</a>
-                    <a class="footer-nav-item" href="#" target="_self">Обратная связь</a>
-                    <a class="footer-nav-item" href="#" target="_self">Разработчикам</a>
-                    <a class="footer-nav-item" href="#" target="_self">Условия использовуания</a>
-                </nav>
+                <div class="footer__nav">
+                    <a class="footer__nav-item" href="#" target="_self">Помощь</a>
+                    <a class="footer__nav-item" href="#" target="_self">Обратная связь</a>
+                    <a class="footer__nav-item" href="#" target="_self">Разработчикам</a>
+                    <a class="footer__nav-item" href="#" target="_self">Условия использовуания</a>
+                </div>
+                <div class="footer__logo">© 2001–2017  ООО «Яндекс»</div>
             </div>`
 }

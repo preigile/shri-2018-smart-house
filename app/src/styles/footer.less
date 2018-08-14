@@ -1,19 +1,30 @@
 .footer {
-  .footer-nav {
-    margin: 27px 40px 22px;
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    .footer-nav-item {
-      margin-right: 15px;
-      font-size: 12px;
-      letter-spacing: 0.01px;
-      color: @grey;
-      text-align: left;
-      text-decoration: none;
-      transition: opacity .15s ease-in-out;
-      &:hover {
-        color: @grey-dark;
-      }
+  &__nav {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  &__nav-item {
+    margin-right: 15px;
+    font-size: 12px;
+    letter-spacing: 0.01px;
+    color: @grey;
+    text-align: left;
+    text-decoration: none;
+    .transition();
+    &:hover {
+      color: @grey-dark;
     }
+  }
+
+  &__logo {
+    margin-right: 40px;
+    font-size: 12px;
+    letter-spacing: 0.01px;
+    color: @grey;
   }
 }
