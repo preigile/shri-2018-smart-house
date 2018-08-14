@@ -6,7 +6,7 @@
   background: @white;
   box-shadow: 0 1px rgba(0, 0, 0, .1);
 
-  .header-logo {
+  &__logo {
     width: 108px;
     height: 2em;
     margin: 0 40px;
@@ -14,19 +14,23 @@
     .contain-img();
   }
 
-  .header-nav {
+  &__nav {
     display: flex;
+  }
 
-    .header-nav-item {
-      margin: 13px;
-      font-weight: bold;
-      line-height: 20px;
-      color: @grey;
-      text-decoration: none;
-      transition: opacity .15s ease-in-out;
-      &:hover {
-        color: @grey-dark;
-      }
+  &__nav-item {
+    margin: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    color: @grey;
+    text-decoration: none;
+    .transition();
+    &:hover {
+      color: @grey-dark;
+    }
+
+    &_selected {
+      color: @grey-dark;
     }
   }
 }
