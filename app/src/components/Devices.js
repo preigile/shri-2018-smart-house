@@ -14,7 +14,7 @@ export default () => {
             </div>`
 }
 
-function devicesType (type) {
+function devicesType(type) {
     return `<div class="devices-type">
                 <div class="devices-type-title">${type.title}</div>
             </div>`
