@@ -4,8 +4,14 @@ import './styles/main.less'
 let root = document.getElementById('root');
 let scripts = root.getElementsByTagName('script');
 
-root.innerHTML = App();
+window.update = () => {
+    root.innerHTML = App();
 
-for (let i = 0; i < scripts.length; i++) {
-    eval(scripts[i].innerText);
-}
+    for (let i = 0; i < scripts.length; i++) {
+        (function () {
+            eval.apply(this, arguments);
+        }(scripts[i].innerText));
+    }
+};
+
+window.update();

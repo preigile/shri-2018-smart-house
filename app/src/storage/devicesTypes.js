@@ -1,5 +1,6 @@
-let devicesTypes = [
-    {
+let devicesTypes = {
+    selected: 'all',
+    all: [{
         id: 1,
         title: 'Bce',
         name: 'all'
@@ -23,8 +24,8 @@ let devicesTypes = [
         id: 5,
         title: 'Камеры',
         name: 'cameras'
-    },
-];
+    }]
+};
 
 export default () => {
     return devicesTypes;

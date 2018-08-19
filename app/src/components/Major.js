@@ -1,5 +1,5 @@
 import Card from "./Card";
-import cardInfo from "../starage/majorCards";
+import cardInfo from "../storage/majorCards";
 
 export default () => {
     return `<div class="major">

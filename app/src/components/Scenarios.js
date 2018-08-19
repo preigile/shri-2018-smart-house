@@ -1,5 +1,5 @@
 import Card from "./Card";
-import scenarioInfo from "../starage/scenarios";
+import scenarioInfo from "../storage/scenarios";
 
 export default () => {
     return `<div class="scenarios">
