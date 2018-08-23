@@ -31,6 +31,12 @@
   &__container {
     display: flex;
     margin-top: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .card {
       margin-right: 15px;
