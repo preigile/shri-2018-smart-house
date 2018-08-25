@@ -1,7 +1,7 @@
 import icons from '../assets/icons.svg';
 
 export default (card) => {
-    return `<div class="card">
+    return `<div class="card ${card.active ? 'card_active' : ''}" onclick="${card.collection}.action('${card.id}')">
                 <svg viewBox="0 0 24 24" class="card__icon">
                     <use xlink:href="${icons}#${card.icon}"></use>
                 </svg>

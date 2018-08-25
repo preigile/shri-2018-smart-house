@@ -1,27 +1,27 @@
 let devicesTypes = {
     selected: 'all',
     all: [{
-        id: 1,
+        id: '1',
         title: 'Bce',
         name: 'all'
     },
     {
-        id: 2,
+        id: '2',
         title: 'Кухня',
         name: 'kitchen'
     },
     {
-        id: 3,
+        id: '3',
         title: 'Зал',
         name: 'hall'
     },
     {
-        id: 4,
+        id: '4',
         title: 'Лампочки',
         name: 'bulbs'
     },
     {
-        id: 5,
+        id: '5',
         title: 'Камеры',
         name: 'cameras'
     }]
