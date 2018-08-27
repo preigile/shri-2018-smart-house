@@ -27,6 +27,24 @@
     &__info {
       padding: 25px;
     }
+
+    .scroll-icon__container {
+      width: 200px;
+      height: 41px;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: @grey-light;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .scroll-icon_double {
+      width: 16px;
+      height: 16px;
+      background: url("../assets/arrow_double.svg") no-repeat;
+    }
   }
 
   .major-cards-info {
@@ -71,5 +89,9 @@
       background: url("../assets/cloud_drizzle.svg") no-repeat;
       .contain-img();
     }
+  }
+
+  .scroll-container {
+    position: relative;
   }
 }

@@ -1,5 +1,5 @@
 .scenarios {
-  margin: 30px 40px 30px 0;
+  margin: 30px 40px 30px 13px;
 
   &__title {
     margin-bottom: 20px;
@@ -8,15 +8,16 @@
   &__container {
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 0 40px;
+    margin: 0;
     .scrolling();
 
     .card {
       height: 72px;
-      margin-bottom: 15px;
-      &:not(:last-of-type) {
-        margin-right: 15px;
-      }
+      margin: 7px;
     }
+  }
+
+  .scroll-container {
+    margin: -7px;
   }
 }

@@ -68,17 +68,17 @@
     .weather__icon {
       margin-left: 0;
     }
+
+    .scroll-icon__container {
+      display: none !important;
+    }
   }
 
   .scenarios {
-    margin: 31px 20px 9px;
+    margin: 31px 20px;
 
     &__container {
       flex-wrap: nowrap;
-    }
-
-    .scroll-container {
-      margin: 0 -40px;
     }
   }
 
@@ -129,7 +129,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .scroll-container {
-    overflow-x: unset;
+  .major {
+    .scroll-container {
+      overflow-x: unset;
+    }
   }
 }

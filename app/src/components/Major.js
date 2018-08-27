@@ -23,6 +23,9 @@ export default () => {
                     <div class="scroll-container">
                         <div class="major-cards">
                             ${cardInfo().map(Card).join('')}
+                            <div class="scroll-icon__container">
+                                <div class="scroll-icon_double"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
