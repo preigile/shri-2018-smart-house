@@ -15,3 +15,21 @@
   -moz-transition: opacity .15s ease-in-out;
   -webkit-transition: opacity .15s ease-in-out;
 }
+
+.scrolling {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 15px;
+  background: @white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.50);
+}

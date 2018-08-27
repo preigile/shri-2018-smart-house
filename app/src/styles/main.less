@@ -6,12 +6,20 @@ body {
   font: .8em ArialMT, Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: @grey-dark;
+  overflow-x: hidden;
 }
 
 .title {
   font-size: 18px;
   font-weight: bold;
   color: @grey-dark;
+}
+
+.arrow-icon_bottom {
+  width: 6px;
+  height: 12px;
+  background: url("../assets/arrow_left.svg") no-repeat;
+  transform: rotate(-90deg);
 }
 
 .major {
@@ -35,12 +43,18 @@ body {
   grid-area: footer;
 }
 
-.app {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 92px auto auto 64px;
-  grid-template-areas: "header header" "major scenarios" "devices devices" "footer footer"
+.scroll-container {
+  .scrolling();
+}
+
+@supports (display: grid) {
+  .app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 92px auto auto 64px;
+    grid-template-areas: "header header" "major scenarios" "devices devices" "footer footer"
+  }
 }
 
 @import "variables";
@@ -50,3 +64,5 @@ body {
 @import "footer";
 @import "major";
 @import "card";
+
+@import "media-query";
