@@ -1,8 +1,13 @@
 ## Запуск
 
-Приложение запускается при помощи [parcel.js](https://parceljs.org/getting_started.html)
+В приложении используется [parcel.js](https://parceljs.org/getting_started.html).
+Установить его можно с помощью команды `npm install -g parcel-bundler` или `yarn global add parcel-bundler`.
+
+Склонируйте репозиторий и запустите приложение:
 
 ```
+git clone https://github.com/preigile/smart-house.git
+cd app
 parcel index.html
 ```
 
